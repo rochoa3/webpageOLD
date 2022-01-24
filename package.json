@@ -2,10 +2,13 @@
   "name": "webpage",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "nodemonConfig": {
+    "ext": "js,html,css"
+  },
+  "main": "src/app.js",
   "scripts": {
-    "start": "node webpage/app.js",
-    "dev": "nodemon webpage/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,10 +17,7 @@
   },
   "dependencies": {
     "express": "^4.17.2"
-  },
-  "nodemonConfig": {
-    "ext": "js,html,css"
   }
-
+  
 
 }
